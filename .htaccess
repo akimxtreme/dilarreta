@@ -1,0 +1,27 @@
+# Activar RewriteEngine
+RewriteEngine on
+RewriteRule ^css/estilos$ css/estilos.css [L]
+
+# Controlador del Error 404
+ErrorDocument 404 http://127.0.0.1/dilarreta/404.php
+# Reescribir la URL solicitada por el usuario
+
+#   Entrada:  servicios
+#   Salida: servicios.html
+RewriteRule ^servicios$ servicios.html [L]
+
+#   Entrada:  portafolio
+#   Salida: portafolio.html
+RewriteRule ^portafolio$ portafolio.html [L]
+
+#   Entrada:  principal
+#   Salida: index.html
+RewriteRule ^principal$ index.html [L]
+
+#   Entrada:  estudios
+#   Salida: estudios.html
+RewriteRule ^estudios$ estudios.html [L]
+
+#   Entrada:  contacto
+#   Salida: contacto.html
+RewriteRule ^contacto$ contacto.html [L]
